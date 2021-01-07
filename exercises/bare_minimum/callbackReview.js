@@ -25,13 +25,10 @@ var pluckFirstLineFromFile = function (filePath, cb) {
 
 // This function should retrieve the status code of a GET request to `url`
 var getStatusCode = function (url, cb) {
-
-  //   const request = require('request');
   request(url, function (err, response) {
     if (err) {
       cb(err);
     } else {
-      // console.log(response)
       cb(null, response.statusCode);
     }
   });
