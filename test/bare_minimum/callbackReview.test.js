@@ -49,7 +49,7 @@ describe('Callback review', function() {
       google.get('/').reply(200);
 
       getStatusCode('https://google.com', function() {
-        // If this asserion gets called, the callback was invoked correctly
+        // If this assertion gets called, the callback was invoked correctly
         // Otherwise, this test will timeout after 2000ms
         expect(true).to.equal(true);
         done();
