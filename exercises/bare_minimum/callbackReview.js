@@ -18,11 +18,6 @@ var pluckFirstLineFromFile = function (filePath, cb) {
 };
 
 
-// fs.readFile('/etc/passwd', (err, data) => {
-//   if (err) throw err;
-//   console.log(data);
-// });
-
 // This function should retrieve the status code of a GET request to `url`
 var getStatusCode = function (url, cb) {
   request(url, function (err, response) {
@@ -39,11 +34,3 @@ module.exports = {
   getStatusCode: getStatusCode,
   pluckFirstLineFromFile: pluckFirstLineFromFile
 };
-
-
-// $.ajax({
-//   url: url,
-//   type: 'GET',
-//   success: (err, data) => cb(null, data),
-//   error: (err, data) => cb(err)
-// });
